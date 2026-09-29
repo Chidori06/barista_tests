@@ -1,0 +1,275 @@
+============================================================
+
+ÉTAPE 1 — Créer la classe Coffee
+------------------------------------------------------------
+
+ACTION :
+
+Créez une classe Coffee qui représentera un café que le
+Barista peut préparer.
+
+============================================================
+
+ÉTAPE 2 — Ajouter le nom du café
+------------------------------------------------------------
+
+ACTION :
+
+Ajoutez un constructeur à la classe Coffee.
+Le constructeur doit recevoir le nom du café et le stocker
+dans une propriété name.
+
+============================================================
+
+ÉTAPE 3 — Ajouter les ingrédients
+------------------------------------------------------------
+
+ACTION :
+
+Un café peut contenir plusieurs ingrédients.
+
+Ajoutez une propriété ingredients contenant un tableau vide.
+
+============================================================
+
+ÉTAPE 4 — Ajouter un ingrédient
+------------------------------------------------------------
+
+ACTION :
+
+Créez une méthode addIngredient() permettant d'ajouter
+un ingrédient à la recette d'un café.
+
+Pour commencer, chaque ingrédient ajouté aura une quantité
+de 1.
+
+============================================================
+
+ÉTAPE 5 — Ajouter une quantité
+------------------------------------------------------------
+
+ACTION :
+
+Modifiez addIngredient() pour qu'elle accepte également
+une quantité.
+
+============================================================
+ÉTAPE 6 — Créer la classe Barista
+------------------------------------------------------------
+
+ACTION :
+
+Créez une classe Barista qui représentera le barista
+et sa machine à café.
+
+============================================================
+
+ÉTAPE 7 — Ajouter le nom du Barista
+------------------------------------------------------------
+
+ACTION :
+
+Ajoutez un constructeur au Barista.
+Il doit recevoir son nom et le stocker dans une propriété name.
+
+============================================================
+
+ÉTAPE 8 — Ajouter les cafés du Barista
+------------------------------------------------------------
+
+ACTION :
+
+Le Barista doit connaître les cafés qu'il sait préparer.
+
+Ajoutez une propriété coffees contenant un tableau de Coffee.
+
+============================================================
+
+ÉTAPE 9 — Ajouter un café
+------------------------------------------------------------
+
+ACTION :
+
+Créez une méthode addCoffee() permettant au Barista
+d'ajouter un café à la liste des cafés qu'il sait préparer.
+
+============================================================
+
+ÉTAPE 10 — Rechercher un café
+------------------------------------------------------------
+
+ACTION :
+
+Créez une méthode getCoffee() qui recherche un café
+par son nom.
+
+La méthode doit retourner le café trouvé ou undefined
+si aucun café ne correspond.
+
+============================================================
+
+ÉTAPE 11 — Lister les cafés
+------------------------------------------------------------
+
+ACTION :
+
+Créez une méthode listCoffees() qui retourne la liste
+des cafés disponibles.
+
+============================================================
+
+ÉTAPE 12 — Créer la classe Ingredient
+------------------------------------------------------------
+
+ACTION :
+
+Créez une classe Ingredient.
+
+Un ingrédient possède un nom et une quantité disponible.
+
+============================================================
+
+ÉTAPE 13 — Ajouter du stock
+------------------------------------------------------------
+
+ACTION :
+
+Ajoutez une méthode addQuantity() à Ingredient.
+
+Elle doit permettre d'ajouter une quantité au stock existant.
+
+============================================================
+
+ÉTAPE 14 — Retirer du stock
+------------------------------------------------------------
+
+ACTION :
+
+Ajoutez une méthode removeQuantity() permettant de retirer
+une quantité du stock.
+
+La méthode retourne true lorsque l'opération est effectuée.
+
+============================================================
+
+ÉTAPE 15 — Empêcher un stock négatif
+------------------------------------------------------------
+
+ACTION :
+
+Modifiez removeQuantity() afin d'empêcher de retirer
+plus d'ingrédients que ce qui est disponible.
+
+Si la quantité demandée est trop importante, la méthode
+doit retourner false et le stock ne doit pas changer.
+
+============================================================
+
+ÉTAPE 16 — Ajouter le stock au Barista
+------------------------------------------------------------
+
+ACTION :
+
+Le Barista doit maintenant posséder son propre stock
+d'ingrédients.
+
+Ajoutez une propriété ingredients contenant un tableau
+d'Ingredient et initialisez-le dans le constructeur.
+
+============================================================
+
+ÉTAPE 17 — Ajouter un ingrédient au stock
+------------------------------------------------------------
+
+ACTION :
+
+Créez une méthode addIngredient() dans Barista.
+
+Si l'ingrédient existe déjà dans le stock, augmentez sa
+quantité.
+
+Sinon, créez un nouvel Ingredient.
+
+============================================================
+
+ÉTAPE 18 — Vérifier si un café peut être préparé
+------------------------------------------------------------
+
+ACTION :
+
+Créez une méthode canMakeCoffee().
+
+Elle doit vérifier que le Barista possède suffisamment
+de chaque ingrédient nécessaire à la préparation du café.
+
+Elle retourne true si le café peut être préparé,
+et false dans le cas contraire.
+
+============================================================
+
+ÉTAPE 19 — Préparer un café
+------------------------------------------------------------
+
+ACTION :
+
+Créez une méthode makeCoffee().
+
+Elle doit :
+
+1. Vérifier que le café peut être préparé.
+2. Retirer du stock les ingrédients nécessaires.
+3. Retourner true si le café est préparé.
+4. Retourner false si les ingrédients sont insuffisants.
+
+============================================================
+
+ÉTAPE 20 — Ajouter un prix au café
+------------------------------------------------------------
+
+ACTION :
+
+Ajoutez une propriété price à Coffee.
+
+Modifiez le constructeur afin que le prix soit fourni
+lors de la création du café.
+
+============================================================
+
+ÉTAPE 21 — Commander un café
+------------------------------------------------------------
+
+ACTION :
+
+Créez une méthode orderCoffee() dans Barista.
+
+Elle reçoit le nom d'un café.
+
+Elle doit :
+
+1. Rechercher le café.
+2. Vérifier qu'il existe.
+3. Vérifier qu'il peut être préparé.
+4. Préparer le café.
+5. Retourner son prix.
+
+Si le café n'existe pas ou ne peut pas être préparé,
+la méthode retourne null.
+
+============================================================
+ÉTAPE 22 — Créer un Cappuccino
+------------------------------------------------------------
+
+Un cappucino coûte 3.5€.
+Il est composé de 2 ingrédients, du lait et du café.
+Créez la recette du café
+
+Créez ensuite un Barista
+
+Ajoutez le cappuccino aux cafés du barista
+Ajoutez des ingrédients nécessaire au stock du barista
+
+Vérifiez si le cappuccino peut être préparé
+Commandez le cappuccino
+
+============================================================
+
